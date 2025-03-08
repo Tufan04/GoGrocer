@@ -1,8 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { useSelector } from "react-redux"
 import findProductsByCategory from "../utils/findProductsByCategory.js"
 import HomeProduct from "../components/HomeProduct"
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 import CartMobile from "../components/CartMobile";
 
@@ -10,7 +9,6 @@ import CartMobile from "../components/CartMobile";
 function Home() {
   const categories = useSelector(state => state.product.categories)
   const products = useSelector(state => state.product.products)
-  const scrollRef = useRef([]);
 
   return (
     <div className="w-full px-4 select-none">
@@ -43,7 +41,7 @@ function Home() {
                 <Link className="text-blue-600 cursor-pointer font-semibold hover:text-blue-500"
                   to={`/category/${category?.name}`}>See All</Link>
               </div>
-              <div className="flex overflow-x-hidden gap-3 px-2 my-4 scroll-smooth" ref={el => scrollRef.current[index] = el}>
+              <div className="flex overflow-x-scroll gap-3 px-2 my-4 scroll-smooth scrollbar-none">
                 {
                   findProductsByCategory(category.name, products)?.map((product, index) => (
                     <div key={index + "product"} className="h-80">
@@ -51,15 +49,6 @@ function Home() {
                     </div>
                   ))
                 }
-              </div>
-              {/* product scroll handler  */}
-              <div>
-                <div className="absolute left-0 top-[50%] translate-y-[-50%] cursor-pointer bg-white rounded-full p-2 shadow-lg text-gray-800 hover:bg-gray-100" onClick={() => scrollRef.current[index]?.scrollBy({ left: -180, behavior: "smooth" })}>
-                  <IoIosArrowBack />
-                </div>
-                <div className="absolute right-0 top-[50%] translate-y-[-50%] cursor-pointer bg-white rounded-full p-2 shadow-lg text-gray-800 hover:bg-gray-100" onClick={() => scrollRef.current[index]?.scrollBy({ left: 180, behavior: "smooth" })}>
-                  <IoIosArrowForward />
-                </div>
               </div>
             </div>
           ))
