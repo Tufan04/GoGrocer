@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../assets/logo.png"
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import qrcode from "../assets/qr-code.jpg"
+import qrcode from "../assets/qr-code.png"
 
 const Footer = () => {
     return (
@@ -22,17 +22,19 @@ const Footer = () => {
                     <div className="flex flex-col items-center">
                         <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
                         <div className="flex gap-4">
-                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaFacebook/></a>
-                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaInstagram/></a>
-                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaXTwitter/></a>
-                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaLinkedin/></a>
+                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaFacebook /></a>
+                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaInstagram /></a>
+                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaXTwitter /></a>
+                            <a href="SOCIAL_LINK" className="text-gray-300 hover:text-white text-2xl"><FaLinkedin /></a>
                         </div>
                     </div>
 
                     {/* QR Code & Contact Info */}
                     <div className="flex flex-col items-center md:items-end">
                         <h3 className="text-lg font-semibold mb-3">Download Our App</h3>
-                        <img src={qrcode} alt="QR Code" className="w-24 mb-3" />
+                        <div className="w-28 bg-white flex justify-center items-center p-2 mb-3">
+                            <img src={qrcode} alt="QR Code" className="w-full" />
+                        </div>
                         <p className="text-sm text-gray-300 text-center md:text-right">
                             Scan the QR code to install our app for a seamless experience.
                         </p>
