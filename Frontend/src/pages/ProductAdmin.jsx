@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NoData from '../components/NoData'
 import { IoSearch } from "react-icons/io5";
-import { errorToast } from '../utils/ToastHandler'
+import { errorToast } from '../utils/ToastHandler.js'
 import axiosInstance from '../config/AxiosInstance'
 import { getProductUrl } from "../config/ApiUrl";
 import ProductItem from "../components/ProductItem";

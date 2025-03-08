@@ -3,11 +3,11 @@ import toast from "react-hot-toast";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { getCartUrl, loginUrl } from "../config/ApiUrl";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import { useNavigate, Link } from "react-router-dom";
 import axiosInstance from "../config/AxiosInstance";
 import { useDispatch } from "react-redux";
-import fetchUserDetails from "../utils/fetchUserDetails";
+import fetchUserDetails from "../utils/fetchUserDetails.js";
 import { setUserDetails } from "../redux/userSlice";
 import { setCartProducts } from "../redux/cartSlice";
 

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { AiOutlineClockCircle } from "react-icons/ai"
-import { calculateDiscount } from "../utils/calculateAmount"
+import { calculateDiscount } from "../utils/calculateAmount.js"
 import AddToCartButton from "../components/AddToCartButton"
 
 function ProductDisplayPage() {

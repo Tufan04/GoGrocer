@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { forgetPasswordUrl } from "../config/ApiUrl";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import { useNavigate, Link } from "react-router-dom";
 import axiosInstance from "../config/AxiosInstance";
 

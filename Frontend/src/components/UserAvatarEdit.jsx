@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from "react-redux"
 import axiosInstance from "../config/AxiosInstance"
 import { uploadAvatarUrl } from "../config/ApiUrl"
-import { errorToast } from "../utils/ToastHandler"
+import { errorToast } from "../utils/ToastHandler.js"
 import toast from "react-hot-toast"
 import { updateAvatar } from "../redux/userSlice"
 import { IoIosCloseCircle } from "react-icons/io";

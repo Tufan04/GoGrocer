@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import UserAvatarEdit from "../components/UserAvatarEdit"
 import axiosInstance from "../config/AxiosInstance"
 import { updateUserUrl } from "../config/ApiUrl"
-import { errorToast } from "../utils/ToastHandler"
+import { errorToast } from "../utils/ToastHandler.js"
 import toast from "react-hot-toast"
 import { setUserDetails } from "../redux/userSlice"
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { calculateTotalDiscountPrice, calculateTotalPrice } from "../utils/calculateAmount";
+import { calculateTotalDiscountPrice, calculateTotalPrice } from "../utils/calculateAmount.js";
 import { FaReceipt } from "react-icons/fa";
 import { GiScooter } from "react-icons/gi";
 import { FaShoppingBag } from "react-icons/fa";

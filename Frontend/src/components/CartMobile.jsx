@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaOpencart } from "react-icons/fa"
-import { calculateTotalDiscountPrice, calculateTotalItems } from "../utils/calculateAmount"
+import { calculateTotalDiscountPrice, calculateTotalItems } from "../utils/calculateAmount.js"
 import { useSelector } from "react-redux"
 import { MdOutlineArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";

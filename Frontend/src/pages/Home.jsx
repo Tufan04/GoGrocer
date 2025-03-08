@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { useSelector } from "react-redux"
-import findProductsByCategory from "../utils/FindProductsByCategory"
+import findProductsByCategory from "../utils/FindProductsByCategory.js"
 import HomeProduct from "../components/HomeProduct"
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";

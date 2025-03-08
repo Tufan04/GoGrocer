@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
-import uploadImage from "../utils/uploadImage";
+import uploadImage from "../utils/uploadImage.js";
 import toast from "react-hot-toast";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import axiosInstance from "../config/AxiosInstance";
 import { updateProductUrl } from "../config/ApiUrl";
 import { updateProduct } from "../redux/productSlice";

@@ -9,7 +9,7 @@ import axiosInstance from "../config/AxiosInstance";
 import { deleteAddressUrl } from "../config/ApiUrl";
 import { setAddresses } from "../redux/addressSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import toast from "react-hot-toast";
 
 

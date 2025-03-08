@@ -4,7 +4,7 @@ import { RiDeleteBin6Fill } from "react-icons/ri";
 import EditSubCategoryItem from "./EditSubCategoryItem";
 import axiosInstance from "../config/AxiosInstance";
 import { deleteSubCategoryUrl } from "../config/ApiUrl";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import ConfirmBox from "./ConfirmBox";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";

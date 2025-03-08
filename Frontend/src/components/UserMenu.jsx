@@ -9,7 +9,7 @@ import axiosInstance from "../config/AxiosInstance";
 import { logoutUrl } from "../config/ApiUrl";
 import { logout, setUserDetails } from "../redux/userSlice";
 import toast from "react-hot-toast";
-import { errorToast } from "../utils/ToastHandler"
+import { errorToast } from "../utils/ToastHandler.js"
 import { TbExternalLink } from "react-icons/tb";
 import { TbCategoryFilled } from "react-icons/tb";
 import { MdCategory } from "react-icons/md";

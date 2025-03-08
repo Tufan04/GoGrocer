@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux"
 import { FaSortDown, FaSortUp } from "react-icons/fa";
 import UserMenu from "./UserMenu";
-import { calculateDiscount, calculateTotalDiscountPrice, calculateTotalItems } from "../utils/calculateAmount";
+import { calculateDiscount, calculateTotalDiscountPrice, calculateTotalItems } from "../utils/calculateAmount.js";
 import CartProductDisplay from "./CartProductDisplay";
 import CountUp from "react-countup";
 

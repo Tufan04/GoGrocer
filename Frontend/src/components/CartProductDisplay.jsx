@@ -6,7 +6,7 @@ import {
     calculateDiscount,
     calculateTotalDiscountPrice,
     calculateTotalItems,
-} from "../utils/calculateAmount";
+} from "../utils/calculateAmount.js";
 import { useDispatch, useSelector } from "react-redux";
 import AddToCartButton from "./AddToCartButton";
 import { useNavigate } from "react-router-dom";

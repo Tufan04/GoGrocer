@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { resetPasswordUrl } from "../config/ApiUrl";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import { useNavigate, Link, useLocation } from "react-router-dom";
 import axiosInstance from "../config/AxiosInstance";
 

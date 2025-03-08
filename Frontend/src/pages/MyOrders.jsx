@@ -3,7 +3,7 @@ import { BiCurrentLocation } from "react-icons/bi";
 import { FaCity, FaMapMarkerAlt } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
 import { useDispatch, useSelector } from "react-redux";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import axiosInstance from "../config/AxiosInstance";
 import { cancelOrderUrl } from "../config/ApiUrl";
 import { setOrders } from "../redux/orderSlice";

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";
 import { otpVerificationUrl } from "../config/ApiUrl";
-import { errorToast } from "../utils/ToastHandler";
+import { errorToast } from "../utils/ToastHandler.js";
 import { useNavigate, Link, useLocation } from "react-router-dom";
 import axiosInstance from "../config/AxiosInstance";
 

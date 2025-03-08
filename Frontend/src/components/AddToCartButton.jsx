@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux"
-import { deleteCartProduct, fetchCartProducts, updateCartProduct } from "../utils/fetchCartProducts"
-import { errorToast } from "../utils/ToastHandler"
+import { deleteCartProduct, fetchCartProducts, updateCartProduct } from "../utils/fetchCartProducts.js"
+import { errorToast } from "../utils/ToastHandler.js"
 import axiosInstance from "../config/AxiosInstance"
 import { addToCartUrl } from "../config/ApiUrl"
 import toast from "react-hot-toast"

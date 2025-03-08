@@ -1,13 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { calculateDiscount } from "../utils/calculateAmount";
-import { useState } from "react";
-import toast from "react-hot-toast";
-import { errorToast } from "../utils/ToastHandler";
-import axiosInstance from "../config/AxiosInstance";
-import { addToCartUrl } from "../config/ApiUrl";
-import { useDispatch, useSelector } from "react-redux";
+import { calculateDiscount } from "../utils/calculateAmount.js";
 import AddToCartButton from "./AddToCartButton";
 
 
